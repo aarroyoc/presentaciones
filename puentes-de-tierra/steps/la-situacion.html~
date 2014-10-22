@@ -1,0 +1,29 @@
+<style>
+.huella{
+	display: none;
+}
+</style>
+<script>
+document.getElementById("la-situacion").addEventListener("impress:stepenter",function(){
+	var huellas=document.getElementsByClassName("huella");
+	var i=0;
+	var inter=setInterval(function(){
+		huellas[i].style.display="initial";
+		i++;
+		if(i==huellas.length)
+			clearInterval(inter);
+	},1000);
+});
+
+</script>
+<h2>La situación</h2>
+<img src="steps/huella.png" class="huella">
+En el siglo XIX, los geólogos y palentólogos no encontraban explicación a sus hallazgos.
+Se habían encontrado fósiles muy similares en ambos lados del Atlántico.
+<img src="steps/huella.png" class="huella">
+
+
+<div class="notes">Press the P
+key to access the notes console.
+</div>
+
