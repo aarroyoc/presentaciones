@@ -12,6 +12,19 @@
             "rotate-y": 0,
             "rotate-z": 0
         }
+    },{
+    	"uri" : "la-situacion1.html",
+    	"id" : "la-situacion1",
+    	"class" : "step",
+    	"data" : {
+    		"x" : 3000,
+    		"y" : 0,
+    		"z" : 0,
+    		"scale" : 1,
+    		"rotate-x" : 0,
+    		"rotate-y" : 0,
+    		"rotate-z" : 90
+    	}
     },
     {
         "uri": "la-situacion.html",
@@ -19,6 +32,33 @@
         "class": "step",
         "data": {
             "x": 3000,
+            "y": 0,
+            "z": 0,
+            "scale": 1,
+            "rotate-x": 90,
+            "rotate-y": 180,
+            "rotate-z": 90
+        }
+    },{
+    	"uri" : "lemuria.html",
+    	"id" : "lemuria",
+    	"class" : "step",
+    	"data" : {
+    		"x" : 3000,
+    		"y" : 1000,
+    		"z" : 1500,
+    		"scale" : 1,
+    		"rotate-x" : 90,
+    		"rotate-y" : 180,
+    		"rotate-z" : 90
+    	}
+    },
+    {
+        "uri": "la-teoria.html",
+        "id": "la-teoria",
+        "class": "step",
+        "data": {
+            "x": 6000,
             "y": 0,
             "z": 0,
             "scale": 1,
