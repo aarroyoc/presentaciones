@@ -54,6 +54,65 @@
     	}
     },
     {
+    	"uri" : "mas-puentes-de-tierra.html",
+    	"id" : "mas-puentes",
+    	"class" : "step",
+    	"data" : {
+    		"x" : 3000,
+    		"y" : 1000,
+    		"z" : 2500,
+    		"scale" : 1,
+    		"rotate-x" : 90,
+    		"rotate-y" : 180,
+    		"rotate-z" : 90
+    	}
+    },
+    {
+		"uri" : "por-que-no-estan.html",
+		"id" : "por-que-no",
+		"class" : "step",
+	    "data" : {
+    		"x" : 3000,
+    		"y" : 2000,
+    		"z" : 2500,
+    		"scale" : 1,
+    		"rotate-x" : 180,
+    		"rotate-y" : 180,
+    		"rotate-z" : 90
+    	}	
+    },
+    {
+		"uri" : "puentes-reales.html",
+		"id" : "puentes-reales",
+		"class" : "step",
+		"data" : {
+    		"x" : 3500,
+    		"y" : 2500,
+    		"z" : 2500,
+    		"scale" : 1,
+    		"rotate-x" : 180,
+    		"rotate-y" : 180,
+    		"rotate-z" : 180
+    	}	
+    },
+    {
+		"uri" : "deriva-continental.html",
+		"id" : "deriva-continental",
+		"class" : "step",
+		"data" : {
+    		"x" : 3000,
+    		"y" : 2000,
+    		"z" : 2000,
+    		"scale" : 1,
+    		"rotate-x" : 180,
+    		"rotate-y" : 270,
+    		"rotate-z" : 180
+    	}	
+    },
+    {
+		"uri" : "fin.html"
+    },
+    {
         "uri": "la-teoria.html",
         "id": "la-teoria",
         "class": "step",

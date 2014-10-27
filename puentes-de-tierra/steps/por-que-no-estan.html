@@ -1,0 +1,25 @@
+<h2>¿Por qué no están?</h2>
+<img class="pregunta" src="steps/interrogante.jpg" style="width: 256px;display: none;">
+<br>
+<h2 class="pregunta" style="display: none;">¿Existen datos que apoyen esta teoría?</h2>
+<br>
+<div class="pregunta" autofocus style="display: none;">La teoría supone que los puentes de tierra desparecieron por terremotos y tsunamis. De tal modo que aunque investigásemos las profundidades no encontraríamos nada</div>
+<script>
+document.getElementById("por-que-no").addEventListener("impress:stepenter",function(){
+	var audio=new Audio;
+	audio.src="steps/MISTERIO.ogg";
+	audio.play();
+	var preguntas=document.getElementsByClassName("pregunta");
+	setTimeout(function(){
+		preguntas[0].style.display="initial";
+	},2000);
+	setTimeout(function(){
+		preguntas[1].style.display="initial";
+	},4000);
+	setTimeout(function(){
+		preguntas[2].style.display="initial";
+		preguntas[0].style.display="none";
+		preguntas[1].style.display="none";
+	},6000);
+});
+</script>
