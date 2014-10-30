@@ -1,0 +1,26 @@
+<h2>La deriva continental</h2>
+
+La deriva continental finalmente fue aceptada como sustituta de la teoría de puentes de tierra. No sin antes muchas protestas por parte de los geólogos.
+
+<script>
+document.getElementById("deriva-continental").addEventListener("impress:stepenter",function(){
+	setTimeout(function(){
+		document.getElementById("deriva-continental").style.position="relative";
+		var img=document.createElement("img");
+		img.src="steps/deriva.png";
+		img.style.display="block";
+		img.style.margin="auto auto";
+		img.style.width=window.innerWidth + "px";
+		img.style.position="absolute";
+		img.style.top=window.innerWidth + "px";
+		document.getElementById("deriva-continental").appendChild(img);
+		var i=0;
+		var inter=setInterval(function(){
+			img.style.top=(window.innerWidth - i ) + "px";
+			i+=5;
+			if(i>window.innerWidth+img.height)
+				clearInterval(inter);
+		},1);
+	},1000);
+});
+</script>

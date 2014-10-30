@@ -110,20 +110,31 @@
     	}	
     },
     {
-		"uri" : "fin.html"
+		"uri" : "fin.html",
+		"id" : "fin",
+		"class" : "step",
+		"data" : {
+    		"x" : 4000,
+    		"y" : 4000,
+    		"z" : 2000,
+    		"scale" : 6,
+    		"rotate-x" : 0,
+    		"rotate-y" : 0,
+    		"rotate-z" : 0
+    	}
     },
     {
-        "uri": "la-teoria.html",
-        "id": "la-teoria",
-        "class": "step",
-        "data": {
-            "x": 6000,
-            "y": 0,
-            "z": 0,
-            "scale": 1,
-            "rotate-x": 0,
-            "rotate-y": 0,
-            "rotate-z": 90
-        }
+		"uri" : "overview.html",
+		"id" : "overview",
+		"class" : "step",
+		"data" : {
+			"x" : 0,
+			"y" : 0,
+			"z" : 0,
+			"scale" : 15,
+			"rotate-x" : 0,
+			"rotate-y" : 0,
+			"rotate-z" : 0
+		}
     }
 ]
