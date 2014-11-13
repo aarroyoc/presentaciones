@@ -82,20 +82,6 @@
     	}	
     },
     {
-		"uri" : "puentes-reales.html",
-		"id" : "puentes-reales",
-		"class" : "step",
-		"data" : {
-    		"x" : 3500,
-    		"y" : 2500,
-    		"z" : 2500,
-    		"scale" : 1,
-    		"rotate-x" : 180,
-    		"rotate-y" : 180,
-    		"rotate-z" : 180
-    	}	
-    },
-    {
 		"uri" : "deriva-continental.html",
 		"id" : "deriva-continental",
 		"class" : "step",
@@ -106,6 +92,20 @@
     		"scale" : 1,
     		"rotate-x" : 180,
     		"rotate-y" : 270,
+    		"rotate-z" : 180
+    	}	
+    },
+    {
+		"uri" : "puentes-reales.html",
+		"id" : "puentes-reales",
+		"class" : "step",
+		"data" : {
+    		"x" : 3500,
+    		"y" : 2500,
+    		"z" : 500,
+    		"scale" : 1,
+    		"rotate-x" : 180,
+    		"rotate-y" : 180,
     		"rotate-z" : 180
     	}	
     },

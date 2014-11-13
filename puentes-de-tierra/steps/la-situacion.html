@@ -3,6 +3,21 @@
 	display: none;
 }
 </style>
+<img src="steps/huella.png" class="huella">
+<!-- Sin embargo se dieron cuenta de que si la evolución era cierta no podían explicar como podían haber pasado los animales de un sitio a otro para seguir evolucionando. Los geólogos y palentólogos no podían encontrar ninguna explicación -->
+<h2 id="fosiles" style="font-size: 30px;">¿Cómo podían encontrase fósiles similares en distintos lugares?</h2>
+<br>
+- Darwin y el ancestro común
+<br>
+- Jules Marcou formula la teoría
+<img src="steps/huella.png" class="huella">
+
+
+<div class="notes">
+
+¿Cómo explicar que fósiles de una misma especie se pudieran encontrar en ambos lados del Atlántico? Es sólo un ejemplo, pues había cientos de pequeños problemillas similares, que eran completamente inexplicables si se partía de la idea de que los continentes siempre habían ocupado las posiciones actuales. Así, con un mapa del mundo como arma principal, comenzaron a imaginarse fantasmales y gigantescos puentes de tierra que cruzaban los océanos del pasado y que ahora estarían sumergidos. En lejanos tiempos los animales a los que corresponden los problemáticos fósiles habrían recorrido esos puentes de tierra para ir saltando de continente en continente. En conclusión, como la realidad y las pruebas eran tozudas, pero no se podía aceptar que los continentes se desplazaban, se hizo lo posible por hacer que la opinión mayoritaria cuadrara con la realidad, aunque fuera a golpe de tinta e imaginación sin límites.
+</div>
+
 <script>
 document.getElementById("la-situacion").addEventListener("impress:stepenter",function(){
 	var huellas=document.getElementsByClassName("huella");
@@ -13,16 +28,15 @@ document.getElementById("la-situacion").addEventListener("impress:stepenter",fun
 		if(i==huellas.length)
 			clearInterval(inter);
 	},1000);
+	var fosiles=document.getElementById("fosiles");
+	var maxpx=100;
+	var inter2=setInterval(function(){
+		fosiles.style.fontSize=maxpx+"px";
+		maxpx--;
+		if(maxpx==30)
+			clearInterval(inter2);
+	},50);
 });
 
 </script>
-<img src="steps/huella.png" class="huella">
-Sin embargo se dieron cuenta de que si la evolución era cierta no podían explicar como podían haber pasado los animales de un sitio a otro para seguir evolucionando. Los geólogos y palentólogos no podían encontrar ninguna explicación
-<img src="steps/huella.png" class="huella">
-
-
-<div class="notes">
-
-¿Cómo explicar que fósiles de una misma especie se pudieran encontrar en ambos lados del Atlántico? Es sólo un ejemplo, pues había cientos de pequeños problemillas similares, que eran completamente inexplicables si se partía de la idea de que los continentes siempre habían ocupado las posiciones actuales. Así, con un mapa del mundo como arma principal, comenzaron a imaginarse fantasmales y gigantescos puentes de tierra que cruzaban los océanos del pasado y que ahora estarían sumergidos. En lejanos tiempos los animales a los que corresponden los problemáticos fósiles habrían recorrido esos puentes de tierra para ir saltando de continente en continente. En conclusión, como la realidad y las pruebas eran tozudas, pero no se podía aceptar que los continentes se desplazaban, se hizo lo posible por hacer que la opinión mayoritaria cuadrara con la realidad, aunque fuera a golpe de tinta e imaginación sin límites.
-</div>
 

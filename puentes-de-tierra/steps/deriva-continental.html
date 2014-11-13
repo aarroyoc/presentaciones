@@ -17,9 +17,13 @@ document.getElementById("deriva-continental").addEventListener("impress:stepente
 		var i=0;
 		var inter=setInterval(function(){
 			img.style.top=(window.innerWidth - i ) + "px";
-			i+=5;
+			i+=1;
 			if(i>window.innerWidth+img.height)
+			{
 				clearInterval(inter);
+				document.getElementById("deriva-continental").style.position="inherit";
+				document.getElementById("deriva-continental").removeChild(img);
+			}
 		},1);
 	},1000);
 });
