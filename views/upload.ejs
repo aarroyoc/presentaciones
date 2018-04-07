@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subir presentación</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Subir presentación</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Nombre">
+            <br>
+            <p>Descripción</p>
+            <textarea name="description"></textarea>
+            <br>
+            <p>HTML</p>
+            <textarea name="embed"></textarea>
+            <br>
+            <input type="file" name="file">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
