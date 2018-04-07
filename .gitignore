@@ -1,0 +1,7 @@
+static/*.odp
+static/*.pptx
+static/*.torrent
+static/*.zip
+static/*.ppt
+node_modules
+.vscode
