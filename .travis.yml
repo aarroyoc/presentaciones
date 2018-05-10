@@ -1,0 +1,9 @@
+language: nodejs
+nodejs:
+ - "8"
+ - "10"
+ - "node"
+install:
+ - npm install
+script:
+ - echo "It works!"
