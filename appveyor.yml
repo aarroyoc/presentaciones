@@ -1,0 +1,9 @@
+image: 
+ - ubuntu
+ - Visual Studio 2015
+stack: node 8
+install:
+ - npm install
+test_script:
+ - echo "It Works!"
+build: off
