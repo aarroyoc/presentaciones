@@ -18,7 +18,7 @@
                 </div>
                 <p><%= talk.description %></p>
                 <p>Publicado: <time datetime="<%= moment(talk.createdAt).format('YYYY-MM-DD') %>"><%= moment(talk.createdAt).format("DD/MM/YYYY") %></time></p>
-                <p>Descargar: <a href="/download/<%= talk.file_id %>">Directa</a> <a href="/downloadTorrent/<%= talk.file_id %>">Torrent</a></p>
+                <p><a href="/download/<%= talk.file_id %>">Descargar</a> <a href="/downloadTorrent/<%= talk.file_id %>">Descargar torrent</a></p>
                 <p>Número de descargas: <%= talk.file.downloads %></p>
             </section>
         <% } %>
