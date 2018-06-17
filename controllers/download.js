@@ -10,4 +10,4 @@ module.exports = async function(req,res){
     }catch(e){
         res.send("File not found").status(404);
     }
-}
+};

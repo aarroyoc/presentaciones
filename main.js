@@ -23,12 +23,12 @@ app.get("/downloadTorrent/:id",downloadTorrent);
 
 app.listen(5454,function(){
     db.sync()
-    .then(()=>{
-        console.log("Presentaciones running at 5454");
-    })
-    .catch((e)=>{
-        console.error("Error with Sequelize-MariaDB");
-        console.error(e);
-    });
+        .then(()=>{
+            console.log("Presentaciones running at 5454");
+        })
+        .catch((e)=>{
+            console.error("Error with Sequelize-MariaDB");
+            console.error(e);
+        });
     
 });
