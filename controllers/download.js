@@ -8,6 +8,6 @@ module.exports = async function(req,res){
         file.save();
         res.download("./static/"+file.file,file.file);
     }catch(e){
-        res.send("File not found").status(404);
+        res.status(404).send("File not found");
     }
 };
