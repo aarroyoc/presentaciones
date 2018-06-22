@@ -4,10 +4,10 @@ node_js:
  - "10"
  - "node"
 addons:
- mariadb: "10.2"
+ mariadb: "10.1"
 install:
  - npm install
 before_script:
- - mariadb -u root < tests/SetupMariaDB.sql
+ - mysql -u root < tests/SetupMariaDB.sql
 script:
  - npm test
