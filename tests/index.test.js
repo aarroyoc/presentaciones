@@ -7,14 +7,8 @@ function sum(a,b){
     return a+b;
 }
 
-test.before(async t => {
-    db.sync()
-        .then(()=>{
-            t.pass();
-        })
-        .catch(()=>{
-            t.fail();
-        });
+test.before(async () => {
+    await db.sync();
 });
 
 test("Test example: Sum",t => {

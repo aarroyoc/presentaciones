@@ -6,11 +6,32 @@ Plataforma web para descargar mis presentaciones/charlas
 
 Todo el contenido está alojado en Torrent y descarga directa, así como visualizadores cuando sea necesario
 
-TODO: 
- - Hacer funcionar el torrent
- - AdSense
- - Analytics
- - estrategia de backups (SQL y static)
+
+Instalar
+```
+npm install
+vim config.json db.js # editar con valores correctos
+sudo mariadb
+>> SQL
+```
+
+SQL
+```sql
+CREATE USER IF NOT EXISTS 'presentaciones-test'@'localhost' IDENTIFIED BY 'presentaciones-test';
+GRANT ALL PRIVILEGES ON * . * TO 'presentaciones-test'@'localhost';
+FLUSH PRIVILEGES;
+CREATE DATABASE presentaciones;
+```
+
+Actualizar dependencias
+```
+npm update
+```
+
+Test (necesario MariaDB en ejecución)
+```
+npm test
+```
 
 
 Nginx:
