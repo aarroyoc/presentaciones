@@ -8,6 +8,6 @@ addons:
 install:
  - npm install
 before_script:
- - sudo mariadb < tests/SetupMariaDB.sql
+ - mariadb -u root < tests/SetupMariaDB.sql
 script:
  - npm test
