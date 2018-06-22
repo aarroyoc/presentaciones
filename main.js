@@ -34,6 +34,7 @@ function setup(){
 }
 
 if(require.main === module){
+    console.log("Starting Presentaciones");
     let app = setup();
 
     app.listen(5454,function(){

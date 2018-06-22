@@ -1,10 +1,21 @@
 import test from "ava";
 import request from "supertest";
 import {setup} from "../main";
+import db from "../db";
 
 function sum(a,b){
     return a+b;
 }
+
+test.before(async t => {
+    db.sync()
+        .then(()=>{
+            t.pass();
+        })
+        .catch(()=>{
+            t.fail();
+        });
+});
 
 test("Test example: Sum",t => {
     t.is(sum(1,2),3);

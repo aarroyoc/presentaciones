@@ -1,8 +1,13 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("presentaciones","","",{
+/* 
+
+Modify according to your MariaDB settings. This is just for automated testing
+
+*/
+const sequelize = new Sequelize("presentaciones","presentaciones-test","presentaciones-test",{
     dialect: "mysql",
-    host: "", 
+    host: "localhost", 
   
     pool: {
         max: 5,
