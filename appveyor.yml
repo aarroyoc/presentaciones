@@ -1,7 +1,7 @@
 image: 
  - ubuntu
  - Visual Studio 2015
-stack: node 8
+stack: node 10 
 install:
  - npm install
 test_script:
