@@ -5,6 +5,9 @@ node_js:
  - "node"
 addons:
  mariadb: "10.1"
+ apt:
+  packages:
+   - mariadb-client
 install:
  - npm install
 before_script:
