@@ -30,3 +30,24 @@ test("controllers:index", async t => {
     t.is(res.status,200);
     t.true(res.header["content-type"].startsWith("text/html"));
 });
+test("controllers:upload:auth:get", async t => {
+    let res = await request(setup())
+        .get("/upload")
+        .send();
+    t.is(res.status,401);
+    t.true(res.header["www-authenticate"] !== undefined);
+});
+test("controllers:upload:auth:post", async t => {
+    let res = await request(setup())
+        .post("/upload")
+        .send();
+    t.is(res.status,401);
+    t.true(res.header["www-authenticate"] !== undefined);
+});
+
+test("controllers:download:nonExistant", async t => {
+    let res = await request(setup())
+        .get("/download/42")
+        .send();
+    t.is(res.status,404);
+});

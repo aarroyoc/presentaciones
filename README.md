@@ -33,6 +33,11 @@ Test (necesario MariaDB en ejecución)
 npm test
 ```
 
+Lint
+```
+eslint .
+```
+
 
 Nginx:
 ```
