@@ -1,5 +1,5 @@
 image: 
- - ubuntu
+ - ubuntu1804
  - Visual Studio 2015
 stack: node 10 
 install:
