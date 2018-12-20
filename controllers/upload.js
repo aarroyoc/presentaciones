@@ -14,31 +14,31 @@ async function get(req,res){
 
 async function post(req,res){
     try{
-    let name = req.body.name;
-    let description = req.body.description;
-    let embed = req.body.embed;
-    let file = req.files[0].filename;
-    let originalname = req.files[0].originalname;
-    await rename("./static/"+file,"./static/"+originalname);
-    file = "./static/"+originalname;
+        let name = req.body.name;
+        let description = req.body.description;
+        let embed = req.body.embed;
+        let file = req.files[0].filename;
+        let originalname = req.files[0].originalname;
+        await rename("./static/"+file,"./static/"+originalname);
+        file = "./static/"+originalname;
 
-    let torrent = await createTorrent(file,{name: originalname, comment: description});
-    await writeFile("./static/"+originalname+".torrent",torrent);
+        let torrent = await createTorrent(file,{name: originalname, comment: description});
+        await writeFile("./static/"+originalname+".torrent",torrent);
 
-    let fileDB = await File.create({
-        file: originalname,
-        torrent: originalname+".torrent"
-    });
+        let fileDB = await File.create({
+            file: originalname,
+            torrent: originalname+".torrent"
+        });
 
-    let talk = Talk.build({
-        name: name,
-        description: description,
-        embed: embed,
-        file_id: fileDB.id
-    });
-    await talk.save();
-    res.send("OK");}
-    catch(e){
+        let talk = Talk.build({
+            name: name,
+            description: description,
+            embed: embed,
+            file_id: fileDB.id
+        });
+        await talk.save();
+        res.send("OK");
+    }catch(e){
         console.log(e);	
     }
 }
