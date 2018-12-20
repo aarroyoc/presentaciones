@@ -13,6 +13,7 @@ async function get(req,res){
 }
 
 async function post(req,res){
+    try{
     let name = req.body.name;
     let description = req.body.description;
     let embed = req.body.embed;
@@ -36,7 +37,10 @@ async function post(req,res){
         file_id: fileDB.id
     });
     await talk.save();
-    res.send("OK");
+    res.send("OK");}
+    catch(e){
+        console.log(e);	
+    }
 }
 
 exports.get = get;
