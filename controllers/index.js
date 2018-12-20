@@ -4,7 +4,7 @@ const moment = require("moment");
 
 module.exports = async (req,res)=>{
     try{
-        let talks = await Talk.all({
+        let talks = await Talk.findAll({
             order: [
                 ["createdAt","DESC"]
             ],

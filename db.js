@@ -1,21 +1,12 @@
 const Sequelize = require("sequelize");
+const config = require("./config.json");
 
-/* 
-
-Modify according to your MariaDB settings. This is just for automated testing
-
-*/
-const sequelize = new Sequelize("presentaciones","presentaciones-test","presentaciones-test",{
-    dialect: "mysql",
-    host: "localhost", 
-  
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    },
-    operatorsAliases: false
+const sequelize = new Sequelize({
+    dialect: "postgres",
+    username: config.connection.user,
+    password: config.connection.password,
+    host: config.connection.host,
+    database: config.connection.database
 });
 
 module.exports = sequelize;

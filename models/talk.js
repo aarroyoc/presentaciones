@@ -18,8 +18,7 @@ var Talk = db.define("talk",{
 },{
     timestamps: true,
     paranoid: false,
-    tableName: "talks",
-    engine: "MYISAM"
+    tableName: "talk"
 });
 
 Talk.belongsTo(File,{

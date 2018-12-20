@@ -1,4 +1,10 @@
 {
     "username" : "aarroyoc",
-    "password" : "123456"
+    "password" : "123456",
+    "connection" : {
+        "user" : "ppt",
+        "password": "ppt42",
+        "host": "localhost",
+        "database" : "ppt"
+    }
 }

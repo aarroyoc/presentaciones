@@ -16,8 +16,7 @@ var File = db.define("file",{
     }
 },{
     timestamps: false,
-    tableName: "files",
-    engine: "MYISAM"
+    tableName: "file"
 });
 
 module.exports = File;

@@ -43,7 +43,7 @@ if(require.main === module){
                 console.log("Presentaciones running at 5454");
             })
             .catch((e)=>{
-                console.error("Error with Sequelize-MariaDB");
+                console.error("Error with Sequelize-PostgreSQL");
                 console.error(e);
             });
         

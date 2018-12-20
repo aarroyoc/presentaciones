@@ -10,17 +10,15 @@ Todo el contenido está alojado en Torrent y descarga directa, así como visuali
 Instalar
 ```
 npm install
-vim config.json db.js # editar con valores correctos
-sudo mariadb
+vim config.json # editar con valores correctos
+sudo -u postgres psql
 >> SQL
 ```
 
 SQL
 ```sql
-CREATE USER IF NOT EXISTS 'presentaciones-test'@'localhost' IDENTIFIED BY 'presentaciones-test';
-GRANT ALL PRIVILEGES ON * . * TO 'presentaciones-test'@'localhost';
-FLUSH PRIVILEGES;
-CREATE DATABASE presentaciones;
+CREATE USER ppt WITH PASSWORD 'ppt42';
+CREATE DATABASE ppt OWNER ppt;
 ```
 
 Actualizar dependencias
@@ -28,7 +26,7 @@ Actualizar dependencias
 npm update
 ```
 
-Test (necesario MariaDB en ejecución)
+Test (necesario PostgreSQL en ejecución)
 ```
 npm test
 ```
