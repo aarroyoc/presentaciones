@@ -12,4 +12,4 @@ ENV NODE_ENV production
 
 EXPOSE 5454
 CMD ["npm", "start"]
-
+# https://jonnev.se/building-node-images-for-docker-on-raspberry-pi-zero/
