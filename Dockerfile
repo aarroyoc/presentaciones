@@ -1,4 +1,4 @@
-FROM node:10.15.0-alpine
+FROM node:12
 
 WORKDIR /opt/presentaciones
 
@@ -10,6 +10,5 @@ COPY . .
 
 ENV NODE_ENV production
 
-EXPOSE 5454
 CMD ["npm", "start"]
 # https://jonnev.se/building-node-images-for-docker-on-raspberry-pi-zero/
