@@ -11,14 +11,14 @@
   "license": "UNLICENSED",
   "dependencies": {
     "create-torrent": "^3.33.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
     "http-auth": "^3.2.3",
     "moment": "^2.24.0",
     "multer": "^1.4.1",
-    "pg": "^7.9.0",
-    "pg-hstore": "^2.3.2",
-    "sequelize": ">=5.3.0"
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.10.0"
   },
   "engines": {
     "node": "10.x"
