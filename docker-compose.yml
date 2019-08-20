@@ -17,6 +17,8 @@ services:
  app:
   build: .
   restart: always
+  volumes:
+   - ./static:/opt/presentaciones/static
   ports:
    - "5454:5454"
   depends_on:
