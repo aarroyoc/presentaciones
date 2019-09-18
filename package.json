@@ -10,15 +10,15 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "create-torrent": "^3.33.0",
-    "ejs": "^2.6.2",
+    "create-torrent": "^4.4.1",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
     "http-auth": "^3.2.3",
     "moment": "^2.24.0",
     "multer": "^1.4.2",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.14.0"
+    "sequelize": "^5.18.4"
   },
   "engines": {
     "node": "12.x"
