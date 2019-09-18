@@ -10,9 +10,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
-    - name: Build Docker images
-      run: docker-compose build
     - name: Setup Presentaciones
       run: cp config.json.sample config.json
+    - name: Build Docker images
+      run: docker-compose build
     - name: Execute tests
       run: docker-compose run app npm test
