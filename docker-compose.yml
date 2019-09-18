@@ -19,6 +19,7 @@ services:
   restart: always
   volumes:
    - ./static:/opt/presentaciones/static
+   - ./config.json:/opt/presentaciones/config.json:ro
   ports:
    - "5454:5454"
   depends_on:

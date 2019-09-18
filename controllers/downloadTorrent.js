@@ -3,7 +3,7 @@ const File = require("../models/file");
 module.exports = async function(req,res){
     try{
         let id = parseInt(req.params.id);
-        let file = await File.findById(id);
+        let file = await File.findByPk(id);
         file.downloads++;
         file.save();
         res.download("./static/"+file.torrent,file.torrent);
