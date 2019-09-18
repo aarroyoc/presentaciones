@@ -1,14 +1,11 @@
 language: node_js
 node_js:
- - "8"
- - "10"
- - "node"
+ - "12"
 services:
- - postgresql
+ - docker
+before_install:
+ - cp config.json.sample config.json
 install:
- - npm install
-before_script:
-  - psql -c "CREATE USER ppt WITH PASSWORD 'ppt42';" -U postgres
-  - psql -c "CREATE DATABASE ppt OWNER ppt;" -U postgres
+ - docker-compose build
 script:
- - npm test
+ - docker-compose run app npm test

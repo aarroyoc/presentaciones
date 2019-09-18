@@ -24,7 +24,7 @@
     "node": "12.x"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
-    "supertest": "^3.4.2"
+    "ava": "^2.4.0",
+    "supertest": "^4.0.2"
   }
 }
