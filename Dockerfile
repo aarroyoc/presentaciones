@@ -1,10 +1,10 @@
-FROM node:12.8.0
+FROM node:12.10.0
 
 WORKDIR /opt/presentaciones
 
 COPY package*.json ./
 
-RUN npm install --only=production
+RUN npm install
 
 COPY . .
 

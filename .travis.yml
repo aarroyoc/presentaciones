@@ -1,14 +1,17 @@
 language: node_js
 node_js:
- - "8"
- - "10"
- - "node"
+ - "12"
+env:
+ - DOCKER_COMPOSE_VERSION=1.24.1
 services:
- - postgresql
+ - docker
+before_install:
+ - cp config.json.sample config.json
+ - sudo rm /usr/local/bin/docker-compose
+ - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+ - chmod +x docker-compose
+ - sudo mv docker-compose /usr/local/bin
 install:
- - npm install
-before_script:
-  - psql -c "CREATE USER ppt WITH PASSWORD 'ppt42';" -U postgres
-  - psql -c "CREATE DATABASE ppt OWNER ppt;" -U postgres
+ - docker-compose build
 script:
- - npm test
+ - docker-compose run app npm test

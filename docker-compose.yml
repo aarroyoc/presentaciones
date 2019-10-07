@@ -2,7 +2,7 @@ version: "3.6"
 services:
  postgres:
   restart: always
-  image: postgres:11.4
+  image: postgres:12.0
   volumes:
    - db-data:/var/lib/postgresql/data
   environment:
@@ -17,6 +17,9 @@ services:
  app:
   build: .
   restart: always
+  volumes:
+   - ./static:/opt/presentaciones/static
+   - ./config.json:/opt/presentaciones/config.json:ro
   ports:
    - "5454:5454"
   depends_on:

@@ -6,6 +6,22 @@ Plataforma web para descargar mis presentaciones/charlas
 
 Todo el contenido está alojado en Torrent y descarga directa, así como visualizadores cuando sea necesario
 
+## Docker setup
+
+```
+cp config.json.sample config.json
+docker-compose build
+docker-compose up
+docker-compose down
+```
+
+To test:
+
+```
+docker-compose run app npm test
+```
+
+## Manual (old) way
 
 Instalar
 ```
