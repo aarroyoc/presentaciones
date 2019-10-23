@@ -67,3 +67,8 @@ sudo systemctl enable presentaciones.service
 sudo systemctl start presentaciones.service
 journalctl -f -u presentaciones.service
 ```
+# Ansible
+
+```
+ansible-playbook backup.yml -i 192.168.0.157, --ask-pass
+```
