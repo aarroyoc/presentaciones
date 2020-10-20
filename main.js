@@ -8,6 +8,7 @@ const download = require("./controllers/download");
 const downloadTorrent = require("./controllers/downloadTorrent");
 
 const auth = require("http-auth");
+const authConnect = require("http-auth-connect");
 const multer = require("multer");
 const config = require("./config.json");
 
@@ -27,8 +28,8 @@ function setup(){
     app.get("/",index);
     app.get("/download/:id",download);
     app.get("/downloadTorrent/:id",downloadTorrent);
-    app.get("/upload",auth.connect(basic),upload.get);
-    app.post("/upload",auth.connect(basic),multer({dest: "./static/"}).any(),upload.post);
+    app.get("/upload",authConnect(basic),upload.get);
+    app.post("/upload",authConnect(basic),multer({dest: "./static/"}).any(),upload.post);
 
     return app;
 }
