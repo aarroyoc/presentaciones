@@ -1,9 +1,0 @@
-image: 
- - ubuntu1804
- - Visual Studio 2015
-stack: node 10 
-install:
- - npm install
-test_script:
- - echo "It Works!"
-build: off
