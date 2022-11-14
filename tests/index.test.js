@@ -1,7 +1,7 @@
-import test from "ava";
-import request from "supertest";
-import {setup} from "../main";
-import db from "../db";
+const test = require("ava");
+const request = require("supertest");
+const {setup} = require ("../main");
+const db = require("../db");
 
 function sum(a,b){
     return a+b;

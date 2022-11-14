@@ -21,11 +21,8 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.21.4"
   },
-  "engines": {
-    "node": "18.x"
-  },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "ava": "^5.0.1",
     "supertest": "^4.0.2"
   }
 }
